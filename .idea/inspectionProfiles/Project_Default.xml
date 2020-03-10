@@ -1,0 +1,22 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="Eslint" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="JSHint" enabled="true" level="ERROR" enabled_by_default="true" />
+    <inspection_tool class="PhpUnhandledExceptionInspection" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="SSBasedInspection" enabled="true" level="ERROR" enabled_by_default="true">
+      <replaceConfiguration name="test" text="foreach($field$ as $item$){&#10;$item$-&gt;$relation$-&gt;count();&#10;}" recursive="false" caseInsensitive="false" type="PHP" reformatAccordingToStyle="true" shortenFQN="true" useStaticImport="true" replacement="foreach($field$-&gt;withCount('$relation$') as $item$){&#10;$item$-&gt;$relation$_count;&#10;}">
+        <constraint name="field" within="" contains="" />
+        <constraint name="item" within="" contains="" />
+        <constraint name="relation" within="" contains="" />
+      </replaceConfiguration>
+      <replaceConfiguration name="bulk update" text="foreach ($users$ as $user$) {&#10;$user$-&gt;$name$ .= &quot;$value$&quot;;&#10;$user$-&gt;save();&#10;}" recursive="false" caseInsensitive="true" type="PHP" reformatAccordingToStyle="true" shortenFQN="true" useStaticImport="true" replacement="$users$-&gt;updateRAW([&#10;&quot;$name$&quot; =&gt; &quot;CONCAT('$name$',$value$)&quot;&#10;]);">
+        <constraint name="users" within="" contains="" />
+        <constraint name="user" within="" contains="" />
+        <constraint name="name" within="" contains="" />
+        <constraint name="value" within="" contains="" />
+      </replaceConfiguration>
+    </inspection_tool>
+    <inspection_tool class="Stylelint" enabled="true" level="ERROR" enabled_by_default="true" />
+  </profile>
+</component>
