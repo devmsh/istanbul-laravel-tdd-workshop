@@ -40,4 +40,12 @@ class TDDTest extends TestCase
     {
 
     }
+
+    /**
+     * @test
+     */
+    public function how_to_choose_our_first_test()
+    {
+
+    }
 }

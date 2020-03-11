@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "af4e22221cc75e7394ad536da2fc3af3",
+    "content-hash": "03c8b097e097619dfd6434d410d5a7da",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -57,6 +57,127 @@
                 "stack"
             ],
             "time": "2019-12-24T22:41:47+00:00"
+        },
+        {
+            "name": "christophrumpel/laravel-command-file-picker",
+            "version": "v0.0.7",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/christophrumpel/laravel-command-file-picker.git",
+                "reference": "554f605054c1935f0862cdf394334195117f1a57"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/christophrumpel/laravel-command-file-picker/zipball/554f605054c1935f0862cdf394334195117f1a57",
+                "reference": "554f605054c1935f0862cdf394334195117f1a57",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "^6.0|^7.0",
+                "laravel/framework": "^6.0|^7.0",
+                "nikic/php-parser": "^4.3",
+                "php": "^7.3"
+            },
+            "require-dev": {
+                "mockery/mockery": "^1.2",
+                "orchestra/testbench": "^4.0|^5.0",
+                "phpunit/phpunit": "^8.4"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Christophrumpel\\LaravelCommandFilePicker\\LaravelCommandFilePickerServiceProvider"
+                    ],
+                    "aliases": {
+                        "LaravelCommandFilePicker": "Christophrumpel\\LaravelCommandFilePicker\\LaravelCommandFilePickerFacade"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Christophrumpel\\LaravelCommandFilePicker\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Christoph Rumpel",
+                    "email": "christoph@christoph-rumpel.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "This package lets a user pick a file or class from a list during a Laravel command.",
+            "homepage": "https://github.com/christophrumpel/laravel-command-file-picker",
+            "keywords": [
+                "christophrumpel",
+                "laravel-command-file-picker"
+            ],
+            "time": "2020-03-03T19:21:45+00:00"
+        },
+        {
+            "name": "christophrumpel/laravel-factories-reloaded",
+            "version": "v0.0.14",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/christophrumpel/laravel-factories-reloaded.git",
+                "reference": "6c99ca73c081b90514388fe2133b252cb5507718"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/christophrumpel/laravel-factories-reloaded/zipball/6c99ca73c081b90514388fe2133b252cb5507718",
+                "reference": "6c99ca73c081b90514388fe2133b252cb5507718",
+                "shasum": ""
+            },
+            "require": {
+                "christophrumpel/laravel-command-file-picker": "^0.0.7",
+                "illuminate/support": "^6.0|^7.0",
+                "laravel/framework": "^6.0|^7.0",
+                "nikic/php-parser": "^4.3",
+                "php": "^7.4"
+            },
+            "require-dev": {
+                "mockery/mockery": "^1.2",
+                "orchestra/testbench": "^4.0|^5.0",
+                "phpunit/phpunit": "^8.4"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Christophrumpel\\LaravelFactoriesReloaded\\LaravelFactoriesReloadedServiceProvider"
+                    ],
+                    "aliases": {
+                        "LaravelFactoriesReloaded": "Christophrumpel\\LaravelFactoriesReloaded\\LaravelFactoriesReloadedFacade"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Christophrumpel\\LaravelFactoriesReloaded\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Christoph Rumpel",
+                    "email": "christoph@christoph-rumpel.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "This package sits on top of Laravel factories and provides you wtih dedicated factory classes for every model.",
+            "homepage": "https://github.com/christophrumpel/laravel-factories-reloaded",
+            "keywords": [
+                "christophrumpel",
+                "laravel-factories-reloaded"
+            ],
+            "time": "2020-03-08T20:09:51+00:00"
         },
         {
             "name": "dnoegel/php-xdg-base-dir",
