@@ -11,6 +11,13 @@ use PHPUnit\Framework\TestCase;
  */
 class WhatsNextTest extends TestCase
 {
+    protected function setUp(): void
+    {
+        parent::setUp();
+
+        $this->markTestSkipped();
+    }
+
     /** @test */
     public function developers_must_read_the_laravel_testing_docs()
     {

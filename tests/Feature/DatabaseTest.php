@@ -28,6 +28,7 @@ class DatabaseTest extends TestCase
      */
     public function for_complex_app_use_laravel_factories_reloaded_package()
     {
+        $this->markTestSkipped();
         $this->open('https://github.com/christophrumpel/laravel-factories-reloaded/blob/master/README.md');
     }
 }

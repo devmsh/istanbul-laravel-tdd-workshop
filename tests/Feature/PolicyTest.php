@@ -9,7 +9,7 @@ use Illuminate\Foundation\Testing\WithFaker;
 use JMac\Testing\Traits\HttpTestAssertions;
 use Tests\TestCase;
 
-class ValidationTest extends TestCase
+class PolicyTest extends TestCase
 {
     /**
      * @test

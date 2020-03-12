@@ -28,7 +28,7 @@ class HttpTest extends TestCase
      */
     public function laravel_can_disable_error_handling_and_middleware_for_testing()
     {
-        
+
     }
 
     /**
@@ -36,6 +36,7 @@ class HttpTest extends TestCase
      */
     public function laravel_test_response_come_with_powerful_assertions()
     {
+        $this->markTestSkipped();
         $this->open('https://laravel.com/docs/master/http-tests#response-assertions');
     }
 
